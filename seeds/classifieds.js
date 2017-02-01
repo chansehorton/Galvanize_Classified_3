@@ -27,7 +27,7 @@ exports.seed = function(knex, Promise) {
           id: 3,
           title: "Marcellus Wallace's briefcase",
           description: "You can't afford this.",
-          price: 100000000,
+          price: 100000,
           item_image: 'http://www.snopes.com/wordpress/wp-content/uploads/2016/03/briefcase.gif',
           created_at: '2017-02-01T12:26:16.000Z',
           updated_at: '2017-02-01T12:26:16.000Z'
