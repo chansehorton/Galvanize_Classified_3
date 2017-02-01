@@ -1,0 +1,24 @@
+<div class="u-full-width">
+  <hr>
+  <div class="row">
+    <div class="three columns">
+      <img src="{{ $ctrl.ad.item_image }}" alt="Picture of {{ $ctrl.ad.title }}">
+    </div>
+    <div class="seven columns">
+      <h5><b>{{ $ctrl.ad.title }}</b></h5>
+      <p>{{ $ctrl.ad.description }}</p>
+      <p>{{ $ctrl.ad.price }} bones</p>
+    </div>
+    <div class="two columns">
+      <div>
+        <button ng-click="$ctrl.toggleFormVis()">Edit</button>
+      </div>
+      <div>
+        <button ng-click="$ctrl.deleteThisPost()">Delete</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <ad-form edit-flag="true" form-visible="$ctrl.formVisible" advert="$ctrl.ad"  ng-if="$ctrl.formVisible"></ad-form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="u-full-width">
+    <hr>
+    <h3>BUYSOMECRAP.COM</h3>
+    <hr>
+  </div>
+  <div class="row">
+    <div class="eight columns">
+      SEARCH: <input type="text" ng-model="searchText"> ||
+      <button ng-click="$ctrl.sortVal = 'title'">Sort By Title </button> ||
+      <button ng-click="$ctrl.sortVal = '-created_at'">Sort By Date</button>
+    </div>
+    <div class="four columns">
+      <button class="button-primary u-pull-left" ng-model="$ctrl.formVisible" ng-click="$ctrl.toggleFormVis()">Post New Advertisement</button>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="u-full-width">
+
+    <ad-form edit-flag="false" form-visible="$ctrl.formVisible" ng-if="$ctrl.formVisible"></ad-form>
+
+    <div ng-repeat="item in $ctrl.currentAdverts | filter:searchText | orderBy:$ctrl.sortVal">
+      <advert ad="item"></advert>
+    </div>
+
+  </div>
+</div>

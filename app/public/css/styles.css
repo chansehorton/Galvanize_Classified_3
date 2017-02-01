@@ -1,0 +1,12 @@
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#description {
+  width: 100%;
+}
+
+#post_button {
+  margin-top: 28px
+}

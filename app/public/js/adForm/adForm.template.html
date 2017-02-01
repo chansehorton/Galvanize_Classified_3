@@ -1,0 +1,41 @@
+<form novalidate name="newPostForm" ng-submit="$ctrl.createNewPost()">
+  <div class="row">
+    <div class="nine columns">
+      <div class="row">
+        <div class="four columns">
+          <label for="title">Title</label>
+          <input id="title" type="text" ng-model="$ctrl.newPost.title" required>
+        </div>
+
+        <div class="four columns">
+          <label for="price">Price</label>
+          <input id="price" type="number" ng-model="$ctrl.newPost.price" required>
+        </div>
+
+        <div class="four columns">
+          <label for="item_image">Image URL</label>
+          <input id="item_image" type="text" ng-model="$ctrl.newPost.item_image" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="u-full-width">
+          <label for="description">Description</label>
+          <textarea id="description" ng-model="$ctrl.newPost.description" required></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="three columns">
+      <button id="post_button" type="submit" ng-disabled="newPostForm.$invalid" class="button-primary">
+        <span>{{ $ctrl.editFlag ? "Update Post" : "Create Post" }}</span>
+      </button>
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+</form>
