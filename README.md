@@ -2,6 +2,8 @@
 
 ## Read the entire README before beginning. Commit often.
 
+###CDH - heroku link: https://stormy-oasis-76575.herokuapp.com/
+
 ## Project Description
 
 Now is your time to show off and make your Angular app pretty.
@@ -25,7 +27,7 @@ The app should implement the following:
 - Valid, well-implemented HTML and CSS
 - Readable and logical JavaScript
 - Responsiveness for different screen sizes and orientations
-- A logical and intuitive UI 
+- A logical and intuitive UI
 
 # Tips
 
